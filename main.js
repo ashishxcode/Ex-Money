@@ -11,7 +11,6 @@ const addExpenseButton = document.querySelector("#addExpenseButton");
 let totalExpense = 0;
 let expenseArray = [];
 
-
 // total Expense
 headingTotal.textContent = totalExpense;
 
@@ -21,7 +20,7 @@ addExpenseButton.addEventListener("click", addExpenseToTotal, false);
 // Validate Input fields 
 function validateInput() {
      document.addEventListener("keypress", function (event) {
-      if (event.keyCode === 13 || event.which === 13) {
+      if (event.key === 13) {
         addExpenseToTotal();
       }
     });
@@ -42,16 +41,18 @@ function addExpenseToTotal() {
       expenseObject.amount = textAmount;
       expenseObject.description = textDescription;
       expenseObject.moment = new Date();
-      
+     
       //putting expenseObject into database
-    db.collection('expense').add(expenseObject);
+      db.collection('expense').add(expenseObject);
   }
   refreshPage()
 }
 
 // Reload function
 function refreshPage() {
-			 location.reload();
+  location.reload();
+  inputDesciption.value = "";
+  inputAmount.value = "";
 }
 
 // Get Date String
