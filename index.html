@@ -2,16 +2,38 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0" />
+        <meta 
+            http-equiv="X-UA-Compatible" 
+            content="ie=edge" />
+        <meta 
+            name="description" 
+            content="Ex-Money is expense tracker web application, Which is built upon Vanila JavaScript and Bootstrap"/>
+        <meta 
+            name="keywords" 
+            content="HTML, Bootstrap,Vanila JS, JavaScript, Localbase"/>
+        <meta 
+            name="author" 
+            content="Ashish Patel"/>
 
-        <title>Ex-Money</title>
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous" />
+        <script 
+            defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+        <link 
+            rel="icon" 
+            type="image/png" 
+            href="Images/favicon.png">
+        <title>Ex-Money | An Expense Tracker using Vanila JS</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -29,7 +51,8 @@
                         placeholder="Amount spent" 
                         aria-label="Amount spent"
                         aria-describedby="spent in rupee"
-                        required />
+                        required 
+                        autofocus/>
                     <div class="input-group-append">
                         <span class="input-group-text" id="spent in rupee">₹</span>
                     </div>
@@ -45,7 +68,8 @@
                         placeholder="spent On" 
                         aria-label="spent On" 
                         aria-describedby="spent at"
-                        required />
+                        required
+                        autofocus />
                     <div class="input-group-append">
                         <button class="btn btn-outline-primary" type="button"  id="addExpenseButton">Add</button>
                     </div>
